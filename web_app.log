@@ -1,0 +1,5 @@
+{"level":"DEBUG","time":"2022-07-24T21:04:50.381+0800","caller":"web_app/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-24T21:06:32.186+0800","caller":"web_app/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-07-24T22:23:20.069+0800","caller":"logger/logger.go:71","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2022-07-24T22:23:20.341+0800","caller":"logger/logger.go:71","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2022-07-24T22:23:37.373+0800","caller":"web_app/main.go:65","msg":"Shutdown Server ..."}
