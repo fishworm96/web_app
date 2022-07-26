@@ -9,10 +9,11 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
-	
+
 	"bluebell/dao/mysql"
 	"bluebell/dao/redis"
 	"bluebell/logger"
+	"bluebell/pkg/snowflake"
 	"bluebell/routers"
 	"bluebell/settings"
 
@@ -48,6 +49,11 @@ func main() {
 		return
 	}
 	defer redis.Close()
+
+	if err := snowflake.Init(settings.Conf.StartTime, settings.Conf.MachineID); err != nil {
+		fmt.Printf("init snowflake failed, err:%v\n", err)
+		return
+	}
 
 	// 注册路由
 	r := routers.Setup(settings.Conf.Mode)
