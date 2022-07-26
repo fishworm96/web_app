@@ -1,7 +1,7 @@
 app:
   name: "web_app"
   model: "dev"
-  port: "50051"
+  port: "8081"
 log:
   level: "debug"
   filename: "web_app.log"
