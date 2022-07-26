@@ -1,0 +1,4 @@
+{"level":"ERROR","time":"2022-07-26T20:55:43.637+0800","caller":"mysql/mysql.go:19","msg":"connect DB faild","error":"dial tcp: lookup tcp/%!d(MISSING): getaddrinfow: The specified class was not found."}
+{"level":"ERROR","time":"2022-07-26T20:57:22.493+0800","caller":"mysql/mysql.go:25","msg":"connect DB faild","error":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*parseTime=True' at line 1"}
+{"level":"INFO","time":"2022-07-26T20:58:17.287+0800","caller":"web_app2/main.go:71","msg":"shutdown Server ..."}
+{"level":"INFO","time":"2022-07-26T20:58:17.318+0800","caller":"web_app2/main.go:77","msg":"Server exiting"}
