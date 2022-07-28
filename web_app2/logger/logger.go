@@ -8,7 +8,6 @@ import (
 	"runtime/debug"
 	"strings"
 	"time"
-
 	"web_app/settings"
 
 	"github.com/gin-gonic/gin"
@@ -17,6 +16,7 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
+// Init 初始化Logger
 func Init(cfg *settings.LogConfig) (err error) {
 	writeSyncer := getLogWriter(
 		cfg.Filename,
@@ -31,9 +31,9 @@ func Init(cfg *settings.LogConfig) (err error) {
 		return
 	}
 	core := zapcore.NewCore(encoder, writeSyncer, l)
-	
+
 	lg := zap.New(core, zap.AddCaller())
-	// 替换zap库中的logger
+	// 替换zap库中全局的logger
 	zap.ReplaceGlobals(lg)
 	return
 }
@@ -50,10 +50,10 @@ func getEncoder() zapcore.Encoder {
 
 func getLogWriter(filename string, maxSize, maxBackup, maxAge int) zapcore.WriteSyncer {
 	lumberJackLogger := &lumberjack.Logger{
-		Filename: filename,
-		MaxSize: maxSize,
+		Filename:   filename,
+		MaxSize:    maxSize,
 		MaxBackups: maxBackup,
-		MaxAge: maxAge,
+		MaxAge:     maxAge,
 	}
 	return zapcore.AddSync(lumberJackLogger)
 }
@@ -81,10 +81,12 @@ func GinLogger() gin.HandlerFunc {
 }
 
 // GinRecovery recover掉项目可能出现的panic，并使用zap记录相关日志
-func GinRecover(stack bool) gin.HandlerFunc {
+func GinRecovery(stack bool) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		defer func() {
 			if err := recover(); err != nil {
+				// Check for a broken connection, as it is not really a
+				// condition that warrants a panic stack trace.
 				var brokenPipe bool
 				if ne, ok := err.(*net.OpError); ok {
 					if se, ok := ne.Err.(*os.SyscallError); ok {
@@ -100,22 +102,23 @@ func GinRecover(stack bool) gin.HandlerFunc {
 						zap.Any("error", err),
 						zap.String("request", string(httpRequest)),
 					)
-					c.Error(err.(error))
+					// If the connection is dead, we can't write a status to it.
+					c.Error(err.(error)) // nolint: errcheck
 					c.Abort()
 					return
 				}
 
 				if stack {
 					zap.L().Error("[Recovery from panic]",
-					zap.Any("error", err),
-					zap.String("request", string(httpRequest)),
-					zap.String("stack", string(debug.Stack())),
-				)
+						zap.Any("error", err),
+						zap.String("request", string(httpRequest)),
+						zap.String("stack", string(debug.Stack())),
+					)
 				} else {
 					zap.L().Error("[Recovery from panic]",
-					zap.Any("error", err),
-					zap.String("request", string(httpRequest)),
-				)
+						zap.Any("error", err),
+						zap.String("request", string(httpRequest)),
+					)
 				}
 				c.AbortWithStatus(http.StatusInternalServerError)
 			}
