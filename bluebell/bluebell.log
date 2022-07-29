@@ -25,3 +25,18 @@
 {"level":"INFO","time":"2022-07-29T21:44:57.043+0800","caller":"logger/logger.go:70","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0039155}
 {"level":"INFO","time":"2022-07-29T21:45:24.890+0800","caller":"bluebell/main.go:86","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2022-07-29T21:45:24.901+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-07-29T23:21:45.381+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-29T23:21:53.506+0800","caller":"controller/user.go:20","msg":"SignUp with invalid  param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2022-07-29T23:21:53.506+0800","caller":"logger/logger.go:79","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0005417}
+{"level":"INFO","time":"2022-07-29T23:22:08.966+0800","caller":"bluebell/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-07-29T23:22:08.980+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-07-29T23:22:12.369+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-29T23:22:19.414+0800","caller":"controller/user.go:20","msg":"SignUp with invalid  param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2022-07-29T23:22:19.415+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0016018}
+{"level":"INFO","time":"2022-07-29T23:28:29.606+0800","caller":"bluebell/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-07-29T23:28:29.609+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-07-29T23:28:32.276+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-29T23:28:40.310+0800","caller":"controller/user.go:20","msg":"SignUp with invalid  param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2022-07-29T23:28:40.310+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0009988}
+{"level":"INFO","time":"2022-07-29T23:28:50.084+0800","caller":"bluebell/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-07-29T23:28:50.086+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
