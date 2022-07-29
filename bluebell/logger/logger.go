@@ -8,8 +8,7 @@ import (
 	"runtime/debug"
 	"strings"
 	"time"
-
-	"bluebell/settings"
+	"bluebell/setting"
 
 	"github.com/gin-gonic/gin"
 	"github.com/natefinch/lumberjack"
@@ -17,7 +16,8 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
-func Init(cfg *settings.LogConfig) (err error) {
+// Init 初始化Logger
+func Init(cfg *setting.LogConfig) (err error) {
 	writeSyncer := getLogWriter(
 		cfg.Filename,
 		cfg.MaxSize,
@@ -33,7 +33,7 @@ func Init(cfg *settings.LogConfig) (err error) {
 	core := zapcore.NewCore(encoder, writeSyncer, l)
 
 	lg := zap.New(core, zap.AddCaller())
-	// 替换zap库中的logger
+	// 替换zap库中全局的logger
 	zap.ReplaceGlobals(lg)
 	return
 }
@@ -81,10 +81,12 @@ func GinLogger() gin.HandlerFunc {
 }
 
 // GinRecovery recover掉项目可能出现的panic，并使用zap记录相关日志
-func GinRecover(stack bool) gin.HandlerFunc {
+func GinRecovery(stack bool) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		defer func() {
 			if err := recover(); err != nil {
+				// Check for a broken connection, as it is not really a
+				// condition that warrants a panic stack trace.
 				var brokenPipe bool
 				if ne, ok := err.(*net.OpError); ok {
 					if se, ok := ne.Err.(*os.SyscallError); ok {
@@ -100,7 +102,8 @@ func GinRecover(stack bool) gin.HandlerFunc {
 						zap.Any("error", err),
 						zap.String("request", string(httpRequest)),
 					)
-					c.Error(err.(error))
+					// If the connection is dead, we can't write a status to it.
+					c.Error(err.(error)) // nolint: errcheck
 					c.Abort()
 					return
 				}
