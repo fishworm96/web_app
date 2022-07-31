@@ -40,3 +40,116 @@
 {"level":"INFO","time":"2022-07-29T23:28:40.310+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0009988}
 {"level":"INFO","time":"2022-07-29T23:28:50.084+0800","caller":"bluebell/main.go:86","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2022-07-29T23:28:50.086+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-07-31T10:19:51.279+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:21:58.011+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:21:58.012+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0011218}
+{"level":"ERROR","time":"2022-07-31T10:22:17.636+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:22:17.637+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0020946}
+{"level":"INFO","time":"2022-07-31T10:22:23.661+0800","caller":"bluebell/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-07-31T10:22:23.671+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-07-31T10:22:31.076+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:22:33.443+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:22:33.443+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0006781}
+{"level":"ERROR","time":"2022-07-31T10:22:56.586+0800","caller":"controller/user.go:36","msg":"logic.SignUp failed","error":"用户已存在"}
+{"level":"INFO","time":"2022-07-31T10:22:56.586+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0012317}
+{"level":"DEBUG","time":"2022-07-31T10:24:07.886+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:24:25.155+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:24:25.155+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0}
+{"level":"ERROR","time":"2022-07-31T10:25:02.540+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:25:02.541+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0009298}
+{"level":"DEBUG","time":"2022-07-31T10:26:22.929+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:26:24.786+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:26:34.239+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:26:34.239+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0006518}
+{"level":"DEBUG","time":"2022-07-31T10:27:32.841+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:27:45.605+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:27:48.899+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:27:48.899+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0}
+{"level":"DEBUG","time":"2022-07-31T10:31:52.260+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:31:52.670+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:31:52.670+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0005321}
+{"level":"ERROR","time":"2022-07-31T10:31:54.093+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:31:54.094+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0005767}
+{"level":"DEBUG","time":"2022-07-31T10:32:01.601+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:35:18.136+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:39:46.521+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:40:10.300+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-07-31T10:40:11.939+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0002891}
+{"level":"DEBUG","time":"2022-07-31T10:40:18.964+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:40:20.409+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:40:46.389+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:40:48.281+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"密码错误"}
+{"level":"INFO","time":"2022-07-31T10:40:48.281+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0005464}
+{"level":"DEBUG","time":"2022-07-31T10:40:55.742+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:42:05.289+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:42:06.488+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"sql: converting argument $1 type: unsupported type models.User, a struct"}
+{"level":"INFO","time":"2022-07-31T10:42:06.488+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0006086}
+{"level":"DEBUG","time":"2022-07-31T10:42:18.446+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T10:43:33.638+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-07-31T10:43:35.584+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000873}
+{"level":"ERROR","time":"2022-07-31T10:43:40.731+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"密码错误"}
+{"level":"INFO","time":"2022-07-31T10:43:40.731+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0006586}
+{"level":"ERROR","time":"2022-07-31T10:43:45.691+0800","caller":"controller/user.go:53","msg":"Login with invalid param","error":"Key: 'ParamLogin.password' Error:Field validation for 'password' failed on the 'required' tag"}
+{"level":"ERROR","time":"2022-07-31T10:43:45.692+0800","caller":"controller/user.go:67","msg":"logic.Login failed","error":"密码错误"}
+{"level":"INFO","time":"2022-07-31T10:43:45.692+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0006976}
+{"level":"DEBUG","time":"2022-07-31T10:44:18.502+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T10:44:24.778+0800","caller":"controller/user.go:53","msg":"Login with invalid param","error":"Key: 'ParamLogin.password' Error:Field validation for 'password' failed on the 'required' tag"}
+{"level":"INFO","time":"2022-07-31T10:44:24.779+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0005191}
+{"level":"INFO","time":"2022-07-31T10:45:25.731+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0011487}
+{"level":"DEBUG","time":"2022-07-31T12:37:32.394+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:37:42.695+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:38:38.285+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:39:37.623+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:40:09.086+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:40:19.828+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:41:14.158+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:41:15.824+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:41:54.448+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:42:06.332+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:42:21.990+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:42:33.170+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:42:34.582+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:42:46.609+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:42:50.536+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:42:53.677+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:42:59.645+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:43:13.907+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:43:32.419+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:43:33.165+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:44:46.445+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:44:47.800+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:46:15.265+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:46:35.477+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:47:03.346+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:47:44.898+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:48:13.159+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:48:29.382+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:48:34.055+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:48:40.747+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:48:42.032+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:49:26.433+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:49:44.048+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:49:55.856+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:50:06.766+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:50:15.577+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:50:19.190+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:50:20.167+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:51:15.342+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:51:16.321+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:51:25.119+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:51:30.453+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:52:04.948+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:57:35.931+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:57:36.968+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:58:57.196+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:59:03.024+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:59:09.073+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:59:29.303+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T12:59:34.840+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-07-31T12:59:43.764+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0010013}
+{"level":"ERROR","time":"2022-07-31T12:59:54.400+0800","caller":"controller/user.go:53","msg":"Login with invalid param","error":"Key: 'ParamLogin.password' Error:Field validation for 'password' failed on the 'required' tag"}
+{"level":"INFO","time":"2022-07-31T12:59:54.400+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0002512}
+{"level":"ERROR","time":"2022-07-31T13:00:11.867+0800","caller":"controller/user.go:22","msg":"SignUp with invalid  param","error":"Key: 'ParamSignUp.password' Error:Field validation for 'password' failed on the 'required' tag\nKey: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag"}
+{"level":"INFO","time":"2022-07-31T13:00:11.867+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000496}
+{"level":"ERROR","time":"2022-07-31T13:00:17.487+0800","caller":"controller/user.go:22","msg":"SignUp with invalid  param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2022-07-31T13:00:17.487+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0000822}

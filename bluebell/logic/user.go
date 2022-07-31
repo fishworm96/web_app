@@ -4,6 +4,7 @@ import (
 	"bluebell/dao/mysql"
 	"bluebell/models"
 	"bluebell/pkg/snowflake"
+
 )
 
 // 存放业务逻辑的代码
@@ -22,4 +23,12 @@ func SignUp(p *models.ParamSignUp) (err error) {
 	}
 	// 保存进数据库
 	return mysql.InsertUser(user)
+}
+
+func Login(p *models.ParamLogin) error {
+	user := &models.User{
+		Username: p.Username,
+		Password: p.Password,
+	}
+	return mysql.Login(user)
 }
