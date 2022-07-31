@@ -3,6 +3,7 @@ package routes
 import (
 	"bluebell/controller"
 	"bluebell/logger"
+	"bluebell/middlewares"
 	"bluebell/setting"
 	"net/http"
 
@@ -21,5 +22,11 @@ func Setup(mode string) *gin.Engine {
 	})
 	r.POST("/signUp", controller.SignUpHandler)
 	r.POST("/login", controller.LoginHandler)
+	r.GET("/ping", middlewares.JWTAuthMiddleware(), func(c *gin.Context) {
+		// 如果是登录的用户,判断请求头中是否有 有效的JWT  ？
+		c.JSON(http.StatusOK, gin.H{
+			"msg": "ok",
+		})
+	})
 	return r
 }
