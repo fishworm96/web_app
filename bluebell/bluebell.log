@@ -153,3 +153,22 @@
 {"level":"INFO","time":"2022-07-31T13:00:11.867+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000496}
 {"level":"ERROR","time":"2022-07-31T13:00:17.487+0800","caller":"controller/user.go:22","msg":"SignUp with invalid  param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
 {"level":"INFO","time":"2022-07-31T13:00:17.487+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0000822}
+{"level":"DEBUG","time":"2022-07-31T13:04:36.342+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-07-31T13:04:40.297+0800","caller":"controller/user.go:33","msg":"logic.SignUp failed","error":"用户已存在"}
+{"level":"INFO","time":"2022-07-31T13:04:40.297+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0012314}
+{"level":"INFO","time":"2022-07-31T13:04:46.620+0800","caller":"logger/logger.go:80","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0030435}
+{"level":"INFO","time":"2022-07-31T13:04:51.076+0800","caller":"logger/logger.go:80","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0005863}
+{"level":"DEBUG","time":"2022-07-31T13:07:47.545+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T13:07:50.041+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T13:07:57.722+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T13:08:01.593+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T13:08:04.933+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T13:08:10.412+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T13:08:11.421+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T13:53:45.424+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T13:53:47.091+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T15:37:16.996+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T15:46:10.539+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T15:46:12.184+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T15:46:25.230+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-07-31T15:46:26.277+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
