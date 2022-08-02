@@ -3,7 +3,9 @@ mode: "dev"
 port: 8080
 start_time: "2022-07-01"
 machine_id: 1
-version: "v0.1.4"
+
+auth:
+  jwt_expire: 8760
 log:
   level: "debug"
   filename: "bluebell.log"
