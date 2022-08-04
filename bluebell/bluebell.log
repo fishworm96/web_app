@@ -388,3 +388,34 @@
 {"level":"ERROR","time":"2022-08-04T21:26:35.451+0800","caller":"controller/post.go:53","msg":"logic.GetPostById(pid) falid","error":"帖子不存在"}
 {"level":"INFO","time":"2022-08-04T21:26:35.451+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/121319216266649601","status":200,"method":"GET","path":"/api/v1/post/121319216266649601","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0006419}
 {"level":"DEBUG","time":"2022-08-04T21:28:02.480+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:28:07.583+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:05:38.486+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:05:39.530+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:05:48.332+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:05:53.078+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:05:56.935+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:06:37.687+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:06:43.551+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:06:45.478+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:07:21.349+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:07:26.602+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:07:39.038+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T22:36:33.793+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T22:37:22.971+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/page=0","status":404,"method":"GET","path":"/api/v1/posts/page=0","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0}
+{"level":"ERROR","time":"2022-08-04T22:37:29.709+0800","caller":"controller/post.go:68","msg":"logic.GetPostList(page, size) falid","error":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'seelct post_id, title, content, author_id, community_id, create_time from post l' at line 1"}
+{"level":"INFO","time":"2022-08-04T22:37:29.709+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=0","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0013683}
+{"level":"DEBUG","time":"2022-08-04T22:38:13.354+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-08-04T22:38:14.216+0800","caller":"controller/post.go:68","msg":"logic.GetPostList(page, size) falid","error":"Error 1690: signed integer value is out of range in 'mysqld_stmt_execute'"}
+{"level":"INFO","time":"2022-08-04T22:38:14.216+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=0","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0018731}
+{"level":"ERROR","time":"2022-08-04T23:02:57.895+0800","caller":"controller/post.go:68","msg":"logic.GetPostList(page, size) falid","error":"Error 1690: signed integer value is out of range in 'mysqld_stmt_execute'"}
+{"level":"INFO","time":"2022-08-04T23:02:57.896+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=0","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0013712}
+{"level":"INFO","time":"2022-08-04T23:03:01.361+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=1","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0029116}
+{"level":"INFO","time":"2022-08-04T23:03:08.016+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=2","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0008667}
+{"level":"INFO","time":"2022-08-04T23:03:13.508+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=1","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0018599}
+{"level":"INFO","time":"2022-08-04T23:03:19.196+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=1&size=2","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0030693}
+{"level":"INFO","time":"2022-08-04T23:03:34.259+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=1","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0023363}
+{"level":"DEBUG","time":"2022-08-04T23:04:11.542+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T23:04:13.158+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T23:04:23.705+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T23:04:25.111+0800","caller":"logger/logger.go:80","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"page=0","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.003777}
+{"level":"DEBUG","time":"2022-08-04T23:04:42.290+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
