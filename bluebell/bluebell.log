@@ -310,3 +310,81 @@
 {"level":"DEBUG","time":"2022-08-03T19:27:45.746+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
 {"level":"INFO","time":"2022-08-03T19:27:55.521+0800","caller":"logger/logger.go:80","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0055909}
 {"level":"DEBUG","time":"2022-08-03T20:14:08.245+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-03T20:14:10.748+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-03T22:19:47.816+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-03T22:19:49.508+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:30:23.158+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:30:24.185+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:30:33.208+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:30:38.893+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:30:47.663+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:31:00.221+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:31:04.315+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:31:07.141+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:31:12.835+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:31:46.423+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:31:50.210+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:32:00.899+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:32:02.599+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:32:19.034+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T07:32:33.596+0800","caller":"logger/logger.go:80","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0047669}
+{"level":"INFO","time":"2022-08-04T07:33:15.694+0800","caller":"logger/logger.go:80","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0007075}
+{"level":"INFO","time":"2022-08-04T07:33:19.639+0800","caller":"logger/logger.go:80","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0016717}
+{"level":"DEBUG","time":"2022-08-04T07:34:08.251+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:34:15.404+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:34:19.565+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T07:35:00.764+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T19:57:45.076+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-08-04T19:58:36.172+0800","caller":"logic/post.go:24","msg":"mysql.GetPostById(pid)","pid":1,"error":"Error 1054: Unknown column 'commuity_id' in 'field list'"}
+{"level":"ERROR","time":"2022-08-04T19:58:36.173+0800","caller":"controller/post.go:53","msg":"logic.GetPostById(pid) falid","error":"Error 1054: Unknown column 'commuity_id' in 'field list'"}
+{"level":"INFO","time":"2022-08-04T19:58:36.173+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/1","status":200,"method":"GET","path":"/api/v1/post/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0010631}
+{"level":"DEBUG","time":"2022-08-04T20:00:05.801+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-08-04T20:00:06.733+0800","caller":"logic/post.go:24","msg":"mysql.GetPostById(pid)","pid":1,"error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-08-04T20:00:06.733+0800","caller":"controller/post.go:53","msg":"logic.GetPostById(pid) falid","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-08-04T20:00:06.733+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/1","status":200,"method":"GET","path":"/api/v1/post/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0020224}
+{"level":"DEBUG","time":"2022-08-04T20:01:42.453+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-08-04T20:01:49.139+0800","caller":"logic/post.go:24","msg":"mysql.GetPostById(pid)","pid":1,"error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-08-04T20:01:49.139+0800","caller":"controller/post.go:53","msg":"logic.GetPostById(pid) falid","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-08-04T20:01:49.139+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/1","status":200,"method":"GET","path":"/api/v1/post/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0014833}
+{"level":"DEBUG","time":"2022-08-04T21:01:36.536+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:01:38.249+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-08-04T21:01:47.705+0800","caller":"logic/post.go:24","msg":"mysql.GetPostById(pid)","pid":1,"error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-08-04T21:01:47.705+0800","caller":"controller/post.go:53","msg":"logic.GetPostById(pid) falid","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-08-04T21:01:47.705+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/1","status":200,"method":"GET","path":"/api/v1/post/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0023991}
+{"level":"INFO","time":"2022-08-04T21:02:18.519+0800","caller":"bluebell/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-08-04T21:02:18.525+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-08-04T21:02:49.086+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-08-04T21:03:11.276+0800","caller":"logic/post.go:24","msg":"mysql.GetPostById(pid)","pid":1,"error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-08-04T21:03:17.279+0800","caller":"controller/post.go:53","msg":"logic.GetPostById(pid) falid","error":"sql: no rows in result set"}
+{"level":"DEBUG","time":"2022-08-04T21:03:26.814+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:05:08.336+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T21:05:17.620+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/12131921626664960","status":200,"method":"GET","path":"/api/v1/post/12131921626664960","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0016453}
+{"level":"DEBUG","time":"2022-08-04T21:06:39.253+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:07:26.114+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T21:07:26.836+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/12131921626664960","status":200,"method":"GET","path":"/api/v1/post/12131921626664960","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0023639}
+{"level":"DEBUG","time":"2022-08-04T21:07:27.784+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T21:07:29.845+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/12131921626664960","status":200,"method":"GET","path":"/api/v1/post/12131921626664960","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0016404}
+{"level":"DEBUG","time":"2022-08-04T21:07:36.450+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:10:33.693+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T21:10:39.520+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/12131921626664960","status":200,"method":"GET","path":"/api/v1/post/12131921626664960","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0015552}
+{"level":"DEBUG","time":"2022-08-04T21:12:01.646+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:12:03.147+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:12:59.573+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T21:19:55.440+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/12131921626664960","status":200,"method":"GET","path":"/api/v1/post/12131921626664960","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0012487}
+{"level":"DEBUG","time":"2022-08-04T21:21:39.997+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:21:58.686+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T21:22:02.304+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/12131921626664960","status":200,"method":"GET","path":"/api/v1/post/12131921626664960","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0006564}
+{"level":"INFO","time":"2022-08-04T21:22:07.609+0800","caller":"bluebell/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-08-04T21:22:07.621+0800","caller":"bluebell/main.go:95","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-08-04T21:22:17.180+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:22:49.025+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-08-04T21:23:40.091+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-08-04T21:23:41.866+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/12131921626664960","status":200,"method":"GET","path":"/api/v1/post/12131921626664960","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0027094}
+{"level":"ERROR","time":"2022-08-04T21:23:53.993+0800","caller":"logic/post.go:24","msg":"mysql.GetPostById(pid)","pid":121319216266649601,"error":"sql: no rows in result set"}
+{"level":"ERROR","time":"2022-08-04T21:23:53.993+0800","caller":"controller/post.go:53","msg":"logic.GetPostById(pid) falid","error":"sql: no rows in result set"}
+{"level":"INFO","time":"2022-08-04T21:23:53.993+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/121319216266649601","status":200,"method":"GET","path":"/api/v1/post/121319216266649601","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000735}
+{"level":"DEBUG","time":"2022-08-04T21:26:32.364+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-08-04T21:26:35.451+0800","caller":"logic/post.go:24","msg":"mysql.GetPostById(pid)","pid":121319216266649601,"error":"帖子不存在"}
+{"level":"ERROR","time":"2022-08-04T21:26:35.451+0800","caller":"controller/post.go:53","msg":"logic.GetPostById(pid) falid","error":"帖子不存在"}
+{"level":"INFO","time":"2022-08-04T21:26:35.451+0800","caller":"logger/logger.go:80","msg":"/api/v1/post/121319216266649601","status":200,"method":"GET","path":"/api/v1/post/121319216266649601","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.0006419}
+{"level":"DEBUG","time":"2022-08-04T21:28:02.480+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}

@@ -8,7 +8,7 @@ type Community struct {
 }
 
 type CommunityDetail struct {
-	Community
+	*Community
 	Introduction string `json:"introduction,omitempty" db:"introduction"`
 	CreateTime   time.Time `json:"create_time" db:"create_time"`
 }
