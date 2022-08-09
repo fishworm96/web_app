@@ -2,17 +2,23 @@ package logic
 
 import (
 	"bluebell/dao/mysql"
+	"bluebell/dao/redis"
 	"bluebell/models"
 	"bluebell/pkg/snowflake"
 
 	"go.uber.org/zap"
 )
 
-func CreatePost(p *models.Post) error {
+func CreatePost(p *models.Post) (err error) {
 	// 生成post id
 	p.ID = snowflake.GenID()
 	// 保存到数据库
-	return mysql.CreatePost(p)
+	err = mysql.CreatePost(p)
+	if err != nil {
+		return err
+	}
+	err = redis.CreatePost(p.ID)
+	return
 	// 返回
 }
 
