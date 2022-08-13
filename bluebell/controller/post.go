@@ -81,6 +81,7 @@ func GetPostListHandler(c *gin.Context) {
 // 3.根据id去数据库查询帖子详细信息
 func GetPostListHandler2(c *gin.Context) {
 	// GET请求参数(query string): /api/v1/posts2?page=1&size=10&order=tiem
+	// 定义默认参数，如果没有传参就用默认参数
 	p := &models.ParamPostList{
 		Page: 1,
 		Size: 10,
