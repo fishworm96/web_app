@@ -4,12 +4,13 @@ import (
 	"bluebell/controller"
 	"bluebell/logger"
 	"bluebell/middlewares"
+	"time"
 
-	_ "bluebell/docs"  // 千万不要忘了导入把你上一步生成的docs
+	_ "bluebell/docs" // 千万不要忘了导入把你上一步生成的docs
 
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
-	
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -18,7 +19,7 @@ func Setup(mode string) *gin.Engine {
 		gin.SetMode(gin.ReleaseMode) // gin设置成发布模式
 	}
 	r := gin.New()
-	r.Use(logger.GinLogger(), logger.GinRecovery(true), middlewares.Cors())
+	r.Use(logger.GinLogger(), logger.GinRecovery(true), middlewares.Cors(), middlewares.RateLimitMiddleware(1 * time.Second, 20))
 
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 
