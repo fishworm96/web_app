@@ -43,7 +43,7 @@ func InitTrans(locale string) (err error) {
 		// 也可以使用uni.FindTranslator(...)传入多个locale进行查找
 		trans, ok = uni.GetTranslator(locale)
 		if !ok {
-			return fmt.Errorf("uni.GetTranslator(%s) failed, locale")
+			return fmt.Errorf("uni.GetTranslator(%s) failed", locale)
 		}
 
 		// 注册翻译器
