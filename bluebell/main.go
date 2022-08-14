@@ -21,6 +21,15 @@ import (
 )
 
 // Go Web开发较通用的脚手架模板
+// @title bluebell项目接口文档
+// @version 1.0
+// @description Go web开发进阶项目实战bluebell
+
+// @contact.name zhou
+// @contact.url https://www.fishworm96.github.io
+
+// @host localhost:8080
+// @BasePath /api/v1
 
 func main() {
 	// 1. 加载配置
