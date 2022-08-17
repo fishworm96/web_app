@@ -33,6 +33,7 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
+		fmt.Println(os.Args)
 		fmt.Println("need config file.eg: bluebell config.yaml")
 		return
 	}
